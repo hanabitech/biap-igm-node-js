@@ -339,7 +339,7 @@ class IssueService {
 
         if (
           process.env.BUGZILLA_API_KEY ||
-          process.env.SELECTED_ISSUE_CRM == "trudesk"
+          process.env.SELECTED_ISSUE_CRM == TRUDESK
         ) {
           bugzillaService.updateIssueInBugzilla(
             protocolIssueResponse?.[0]?.context?.transaction_id,
